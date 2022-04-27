@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  .spacer {
     flex: 1 1 auto;
   }
@@ -6,3 +7,8 @@
     border: 0;
   }
   
+=======
+.spacer{
+    flex: 1 1 auto;
+}
+>>>>>>> 5cce5bdfbf76c9d29d147a3a1ae85322bdf597d2

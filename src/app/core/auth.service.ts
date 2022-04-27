@@ -16,12 +16,17 @@ export class AuthService {
   }
 
 
+<<<<<<< HEAD
   get authenticated(): boolean {
     return this.authState !== null
   }
 
   get currentUserId(): string {
     return this.authenticated ? this.authState.uid : null
+=======
+  login(){
+    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+>>>>>>> 5cce5bdfbf76c9d29d147a3a1ae85322bdf597d2
   }
 
   login() {
