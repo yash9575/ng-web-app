@@ -14,12 +14,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { PostsModule } from './posts/posts.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-   // NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +29,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     AngularFireStorageModule,
     AppRoutingModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    PostsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
