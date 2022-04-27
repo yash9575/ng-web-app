@@ -4,8 +4,8 @@
         ng-blog
     </span>
     <span class="spacer"></span>
-    <div *ngif="auth.afAuth.authState | aysnc as user; else showLogin">
-    <span>hello {{user.displayName}}!</span>
+    <div *ngif="auth.afAuth.authState | async as user; else showLogin">
+        <span>Hello {{user.displayName}}!</span>
     <button mat-button (click)="auth.logout()">logout</button>
 </div>
 <ng-template #showLogin>

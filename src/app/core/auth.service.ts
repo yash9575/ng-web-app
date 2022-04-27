@@ -13,7 +13,7 @@ export class AuthService {
   constructor(public afAuth:AngularFireAuth ) { }
 
   login(){
-    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+    this.afAuth.auth.signInWithPopup(new firebase.auth.GithubAuthProvider())
   }
   logout(){
     this.afAuth.auth.signOut()
