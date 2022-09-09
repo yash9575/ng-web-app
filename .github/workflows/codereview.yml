@@ -10,4 +10,4 @@ jobs:
       env: 
         islead: github.event.review.user.login
       steps: 
-        -  run: echo "${{github.event.review}}"
+        -  run: echo "${{JSON.parse(github.event.review)}}"
