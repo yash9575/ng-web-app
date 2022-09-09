@@ -1,1 +1,14 @@
+name: Code reviewed by lead
+on:
+  pull_request_review:
+    types: [submitted]
 
+jobs:
+   Approver:
+      if: contains(fromJson('["yash-hi-robomq", "kirti-khandelwal-robomq", "shashank-garg-robomq", "noopur-rathore-robomq", "roshan-kumawat-robomq", "sagar-rana-robomq", "NikitaGupta-Robomq", "shubham-tak-robomq
+          ","viral-natani-robomq"]'), github.event.review.user.login)
+      runs-on: self-hosted
+      env: 
+        islead: github.event.review.user.login
+      steps: 
+        -  run: echo "is a lead"
