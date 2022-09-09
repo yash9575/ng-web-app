@@ -8,6 +8,6 @@ jobs:
       if: github.event.review.state == 'approved'
       runs-on: label-4
       env: 
-        islead: ${{github.event.review}}
+        islead: ${{github.event.review.user}}
       steps: 
         -  run: echo $islead
