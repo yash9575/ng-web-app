@@ -17,5 +17,5 @@ jobs:
         - name: save artifact
           uses: actions/upload-artifact@v3
           with:
-            name: artifacts.txt
-            path: dist/artifacts.txt
+            name: hey.txt
+            path: dist/hey.txt
