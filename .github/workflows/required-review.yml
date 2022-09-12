@@ -20,7 +20,7 @@ jobs:
           requirements: |
             - paths: unmatched
               teams:
-                    - "@yash-sharma-robomq"
+                    - "@jigya-goel-robomq"
           status: Required Review
           fail: true
           token: ${{ github.token }}
