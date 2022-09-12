@@ -2,12 +2,20 @@ name: Code reviewed by lead
 on:
   pull_request_review:
     types: [submitted]
+env:
+  b1: false
 
 jobs:
    Approver:
-      if: github.event.review.state == 'approved'
+      if: github.event.review.user.login == 'yash-sharma-robomq'
       runs-on: label-4
       env: 
-        islead: ${{github.event.review.user}}
+        b1: true
       steps: 
-        -  run: echo $islead
+        - name: job run
+          run: echo $b1
+        - name: save artifact
+          uses: actions/upload-artifact@v3
+          with:
+            name: Boolean save
+            path: workflows/test/code-coverage.txt
