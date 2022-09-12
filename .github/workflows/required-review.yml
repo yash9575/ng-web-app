@@ -16,10 +16,11 @@ jobs:
     steps:
       - uses: Automattic/action-required-review@v3
         with:
-          token: ${{ secrets.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 }}
+          #token: ${{ secrets.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 }}
           requirements: |
             - paths: unmatched
               teams:
-                - @yash-sharma-robomq
+                    - "@yash-sharma-robomq"
           status: Required Review
           fail: true
+          token: ${{ github.token }}
