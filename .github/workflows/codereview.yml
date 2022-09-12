@@ -17,5 +17,5 @@ jobs:
         - name: save artifact
           uses: actions/upload-artifact@v3
           with:
-            name: Boolean save
-            path: ng-web-app/.github/workflows/test/code-coverage.txt
+            name: artifacts.txt
+            path: .github/workflows/test/artifacts.txt
